@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:clickable="true">
+
+    <RelativeLayout
+           android:id="@+id/video_holder"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+   <kz.taxi.komandir.CustomVideoView
+                android:id="@+id/fullVideo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+ </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+    <Button 
+        android:id= "@+id/btnDown"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background = "@drawable/ic_decrease"
+        android:layout_toRightOf="@+id/btnDown"
+        ></Button>
+    <Button 
+        android:id= "@+id/btnUp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background = "@drawable/ic_increase"
+        android:layout_marginLeft="20dp"
+        ></Button>
+    </LinearLayout>
+    
+
+</RelativeLayout>
+    
+   
